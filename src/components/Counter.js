@@ -3,9 +3,9 @@ import { counterActions } from "../store/index";
 import classes from "./Counter.module.css";
 
 const Counter = () => {
-  const counter = useSelector((state) => state.counter); //useSelector allows us suscribe and clear after unmount component
+  const counter = useSelector((state) => state.counter.counter); //useSelector allows us suscribe and clear after unmount component
 
-  const show = useSelector((state) => state.showCounter);
+  const show = useSelector((state) => state.counter.showCounter);
 
   const dispatch = useDispatch();
 
